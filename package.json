@@ -1,0 +1,21 @@
+{
+  "name": "sensorbot",
+  "version": "1.0.0",
+  "description": "Automatic download of email attachments.",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/z3rone/email-attachment-downloader.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^2.0.0",
+    "download-email-attachments": "^2.0.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.3"
+  }
+}
