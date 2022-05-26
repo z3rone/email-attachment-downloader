@@ -28,7 +28,7 @@ function run() {
   downloadEmailAttachments({
     account: process.env.EMAIL_CONNECTION, // all options and params besides account are optional
     directory: './downloads',
-    filenameTemplate: '{senderAddress}/{day}/{filename}',
+    filenameTemplate: process.env.FILENAME_PATTERN,
     timeout: 10000,
     log: {warn: console.warn, debug: (msg)=>{}, error: console.error, info: console.info },
     since: lastRun,
