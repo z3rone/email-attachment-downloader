@@ -14,7 +14,7 @@ if(fs.existsSync(lastRunFile)) {
   console.log("No previous run")
 }
 
-console.log("Schedule download right after midnight")
+console.log("Schedule download")
 var CronJob = require('cron').CronJob;
 var job = new CronJob(
 	process.env.CRON_SCHEDULE,
