@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:12.22.5-bullseye-slim
 
 RUN mkdir /app
 WORKDIR /app
@@ -8,6 +8,7 @@ RUN mkdir downloads
 
 COPY src/index.js .
 COPY package.json .
+COPY package-lock.json .
 COPY src/entrypoint.sh .
 
 RUN chmod +x entrypoint.sh
