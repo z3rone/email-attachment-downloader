@@ -46,5 +46,6 @@ var onEnd = function (result) {
   }
   console.log("done")
   console.log(result.latestTime)
-  fs.writeFileSync(lastRunFile, moment().format('YYYY-MM-DD'), { flag:'w+' })
+  lastRun = moment().format('YYYY-MM-DD')
+  fs.writeFileSync(lastRunFile, lastRun, { flag:'w+' })
 }
