@@ -31,7 +31,7 @@ function run() {
     filenameTemplate: '{senderAddress}/{day}/{filename}',
     timeout: 10000,
     log: {warn: console.warn, debug: (msg)=>{}, error: console.error, info: console.info },
-    since: moment(lastRun, 'YYYY-MM-DD').add(1, 'day').format('YYYY-MM-DD'),
+    since: lastRun,
     attachmentHandler: function (attachmentData, callback, errorCB) {
       //console.log(attachmentData)
       callback()
