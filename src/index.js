@@ -21,7 +21,7 @@ var job = new CronJob(
 	run,
 	null,
 	true,
-	'Europe/Berlin'
+	process.env.TIME_ZONE
 );
 
 function run() {

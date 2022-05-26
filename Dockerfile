@@ -15,5 +15,6 @@ RUN chmod +x entrypoint.sh
 VOLUME ["/app/status", "/app/downloads", "app/node_modules"]
 
 ENV CRON_SCHEDULE="0 0 * * *"
+ENV TIME_ZONE="Europe/Berlin"
 
 CMD ["bash", "entrypoint.sh"]
