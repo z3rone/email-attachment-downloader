@@ -6,7 +6,9 @@ This project ist based on the following packages:
 * https://github.com/eHealthAfrica/download-email-attachments
 
 # Usage
-`docker run -it -e EMAIL_CONNECTION=$EMAIL_CONNECTION z3rone/email-attachment-downloader:0.5`
+```docker run -it -e EMAIL_CONNECTION=$EMAIL_CONNECTION -v /path/on/host:/app/downloads z3rone/email-attachment-downloader:0.5```
+
+This command downloads the e-mail attachments from the account defined by `$EMAIL_CONNECTION` do the directory `/path/on/host`.
 
 ## Environment Variables
 
